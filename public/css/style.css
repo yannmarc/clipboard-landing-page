@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root{
+    /* Primary-Colors */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* Neutral Colors */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+/* General CSS */
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* General Styles */
+.container{
+    width: inherit;
+    height: auto;
+
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.move-up{
+    margin-top: -100em;
+}
+
+a{
+    text-decoration: none;
+    text-align: left;
+}
+
+.container .content{
+    text-align: center;
+    margin-top: 5em;
+}
+
+/* styling the header section */
+.header-section{
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    background-image: url('../../images/bg-header-mobile.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 .2em;
+    padding-bottom: 2em;
+    margin-bottom: 8em;
+}
+
+/* Styling the Hero section */
+.hero-section{
+    margin-top: 8em;
+    padding: 0 .2em;
+}
+
+.hero-section .big-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section .hero-text h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--dark-grayish-blue);
+    text-align: center;
+    margin-top: .8em;
+    padding: 0em .5em;
+}
+
+.hero-section .hero-body-text{
+    color: var(--grayish-blue);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.hero-section .hero-btns{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: column;
+    padding: 0 2em;
+}
+
+.hero-section .hero-btns a{
+    margin-top: .5em;
+    text-align: center;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.hero-section .hero-btns a.iOS{
+    background-color: var(--strong-cyan);
+    color: white;
+}
+
+.hero-section .hero-btns a.Mac{
+    background-color: var(--light-blue);
+    color: white;
+}   
+
+/* Hero section end here */
+
+/* Track Snippets CSS section */
+.content .headlines{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.headlines .title{
+    font-size: 1.5em;
+    color: var(--dark-grayish-blue);
+    margin-bottom: .8em;
+    padding: 0 1em;
+}
+
+.headlines .body-text{
+    color: var(--grayish-blue);
+    padding: 0 1em;
+    margin-bottom: 2em;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .img-cut-out{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.features .img-cut-out .img-cut{
+    width: calc(100% - 25%);
+    height: auto;
+}
+
+.features .img-cut-out .img-cut img{
+    width: 100%;
+    height: auto;
+}
+
+.feature-desc{
+    margin-top: 1.8em;
+}
+.feature-desc .list .title{
+    font-size: 1.3em;
+    color: var(--dark-grayish-blue);
+    margin-bottom: .8em;
+    padding: 0 1em;
+}
+.feature-desc .list .list-desc{
+    color: var(--grayish-blue);
+    padding: 0 1em;
+    margin-bottom: 3.1em;
+}
+/* Track Snippet styling ends here (mobile) */
+
+/* Acess Clipboard CSS section */
+
+.content .img-showcase{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content .img-showcase .img-container{
+    width: calc(100% - 25%);
+    height: auto;
+    margin: 2em 0;
+}
+
+.content .img-showcase .img-container img{
+    width: 100%;
+}
+
+/* Card container */
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    flex-direction: column;
+}
+
+.card .icon{
+    margin-bottom: 2em;
+
+}
+.card .headlines .title{
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+
+/* Company logo section */
+
+.icon-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.icon-gallery .icon{
+    margin-bottom: 2.5em;
+}
+
+/* Clipboard for iOS and Mac OS */
+
+.content .hero-btns{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: column;
+    padding: 1.5em;
+}
+
+.content .hero-btns a{
+    margin-top: .5em;
+    text-align: center;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.content .hero-btns a.iOS{
+    background-color: var(--strong-cyan);
+    color: white;
+}
+
+.content .hero-btns a.Mac{
+    background-color: var(--light-blue);
+    color: white;
+}
+
+/* Footer section */
+footer{
+    background-color: rgb(238, 238, 238);
+    padding: .5em 0;
+}
+.container .content .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row .col-2{
+    margin: 2em 0;
+}
+.row .col-2 ul li{
+    margin-top: .5em;
+}
+.row .col-2 ul li a{
+    color: var(--dark-grayish-blue);
+}
+.row .col-3 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+/* Responsive section */
+
+/* Tablet Responsive section */
+@media screen and (min-width: 576x) {
+
+    .content .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .features .img-cut-out{
+        position: relative;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content .features .img-cut-out .img-cut{
+        width: calc(100% - 30%);
+    }
+
+    .content .feature-desc{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content .feature-desc .list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content .feature-desc .list .list-desc{
+        padding: 0;
+    }
+
+    .container .icon-gallery{
+       display: grid;
+       grid-template-columns: repeat(3, auto);
+       grid-template-rows: repeat(2, auto);
+       align-items: center;
+       justify-content: center;
+       place-content: center;
+       gap: 2em;
+
+    }
+}
+
+/* Laptops and bigger screens */
+@media screen and (min-width: 576px) {
+
+    /* responsive section of the Header and hero section */
+    .hero-section .hero-body-text{
+        color: var(--grayish-blue);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2em;
+        padding: 0 10em;
+    }
+
+    .hero-section .hero-btns{
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-section .hero-btns a{
+        margin-top: .5em;
+        text-align: center;
+        padding: .8em 1.5em;
+        border-radius: 30px;
+        text-decoration: none;
+        margin-left: .8em;
+    }
+    
+    /* Responsive section of the  Track Snippet styling */
+    .headlines{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headlines .body-text{
+        color: var(--grayish-blue);
+        padding: 0 7em;
+        margin-bottom: 2em;
+        width: 75%;
+        line-height: 1.5em;
+    }
+    .content .features{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: 1fr;
+        margin-top: 2em;
+    }
+    .features .img-cut-out{
+        column-span: 1/4;
+        position: relative;
+        left: -1.5em;
+    }
+
+    .features .img-cut-out .img-cut{
+        width: calc(100% - 0%);
+        height: auto;
+    }
+    .features .img-cut-out .img-cut img{
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-desc{
+        text-align: left;
+        margin-top: 4em;
+    }
+    .feature-desc .list{
+        margin-left: 2em;
+    }
+
+    .feature-desc .list .title{
+        padding: 0;
+        margin-left: .6em;
+        margin-bottom: .4em;
+    }
+    .feature-desc .list-desc{
+        width: 75%;
+    }
+
+    /* Access clipboard CSS styles */
+    .content .img-showcase .img-container{
+        width: calc(100% - 55%);
+        height: auto;
+        margin: 2em 0;
+    }
+
+    .content .img-showcase .img-container img{
+        width: 100%;
+        height: auto;
+        margin: 2em 0;
+    }
+
+    /* Super charge CSS styles */
+    .content .card-container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 1fr;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 5em auto;
+    }
+
+    .content .card-container .body-text{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Company Logo section */
+    .container .icon-gallery{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(1, auto);
+        justify-content: space-evenly;
+        margin: 10em 0em;
+    }
+
+    /* Clipboard iOS and MacOS */
+    .container .hero-btns{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        margin: 0;
+        margin-bottom: 5em;
+    }
+
+    /* Footer */
+    footer{
+        padding: 0em 0em;
+    }
+    footer .container .content .row{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, auto);
+        align-items: center;
+        gap: 8em;
+    }
+    .content .row .col-2 ul{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 2em;
+        text-align: left;
+    }
+    .row .col-2 ul li a{
+        color: var(--dark-grayish-blue);
+        display: inline-block;
+        padding-bottom: .3em;
+        text-align: left;
+    }
+    .row .col-3 ul{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+}
+
